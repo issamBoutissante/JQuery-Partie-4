@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 3</title>
+  </head>
+  <body>
+    <p>Voici la list de element</p>
+    <ol>
+      <li>Element 1</li>
+    </ol>
+  </body>
+  <script src="../jquery.js"></script>
+  <script>
+    $(function () {
+      var i = 1;
+      $("p").click(function () {
+        $("ol").append("<li>Element " + ++i + "</li>");
+      });
+    });
+  </script>
+</html>

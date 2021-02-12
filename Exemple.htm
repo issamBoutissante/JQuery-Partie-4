@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemple</title>
+  </head>
+  <script src="./jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("p").on("click", function () {
+        $(this).css("background-color", "pink");
+      });
+      $("button").click(function () {
+        $("p").off("click");
+      });
+    });
+  </script>
+  <body>
+    <p>Cliquez sur ce paragraphe pur changer sa couleur d'arriere-plan.</p>
+    <p>
+      Cliquez sur le bouton ce desoux puis cliquez sur ce paragraphe
+      (l'evenement click est supprime)>
+    </p>
+    <button id="b">Supprimer le gestionnaire d'evenemnts click</button>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex1</title>
+  </head>
+  <body>
+    col:
+    <span></span>
+    ligne:
+    <span></span>
+  </body>
+  <script src="../jquery.js"></script>
+  <script>
+    $(function () {
+      $(document).mousemove(function (e) {
+        $("span:first").text(e.clientX);
+        $("span:nth-child(2)").text(e.clientY);
+      });
+    });
+  </script>
+</html>
